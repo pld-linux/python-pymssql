@@ -9,8 +9,8 @@ Source0:	http://dl.sourceforge.net/pymssql/pymssql-%{version}.tar.gz
 # Source0-md5:	eb51a4261a68fc4dfb19768f539da68e
 URL:		http://pymssql.sourceforge.net/
 BuildRequires:	freetds-devel >= 0.60
+BuildRequires:	python
 BuildRequires:	python-devel >= 1:2.4
-BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
