@@ -2,7 +2,7 @@ Summary:	A Python interface to MSSQL
 Summary(pl):	Interfejs Pythona do MSSQL
 Name:		python-pymssql
 Version:	0.6.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/pymssql/pymssql-%{version}.tar.gz
