@@ -2,11 +2,12 @@ Summary:	A Python interface to MSSQL
 Summary(pl):	Interfejs Pythona do MSSQL
 Name:		python-pymssql
 Version:	0.6.0
-Release:	3
+Release:	4
 License:	GPL
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/pymssql/pymssql-%{version}.tar.gz
 # Source0-md5:	eb51a4261a68fc4dfb19768f539da68e
+Patch0:		%{name}-buildfix.patch
 URL:		http://pymssql.sourceforge.net/
 BuildRequires:	freetds-devel >= 0.60
 BuildRequires:	python
@@ -22,6 +23,7 @@ Interfejs Pythona do MSSQL.
 
 %prep
 %setup -q -n pymssql-%{version}
+%patch0 -p0
 
 %build
 env CFLAGS="%{rpmcflags}" %{_bindir}/python setup.py build
