@@ -1,5 +1,5 @@
 Summary:	A Python interface to MSSQL
-Summary(pl):	Interfejs Pythona do MSSQL
+Summary(pl.UTF-8):   Interfejs Pythona do MSSQL
 Name:		python-pymssql
 Version:	0.6.0
 Release:	5
@@ -18,7 +18,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A Python interface to MSSQL.
 
-%description -l pl
+%description -l pl.UTF-8
 Interfejs Pythona do MSSQL.
 
 %prep
