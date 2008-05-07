@@ -11,6 +11,7 @@ URL:		http://pymssql.sourceforge.net/
 BuildRequires:	freetds-devel >= 0.63
 BuildRequires:	python
 BuildRequires:	python-devel >= 1:2.4
+BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
