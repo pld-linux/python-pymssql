@@ -8,6 +8,7 @@ Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/pymssql/pymssql-%{version}.tar.gz
 # Source0-md5:	1526315e20f55a6c74c86d6ca0ce07c4
 URL:		http://pymssql.sourceforge.net/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	freetds-devel >= 0.63
 BuildRequires:	python
 BuildRequires:	python-devel >= 1:2.4
