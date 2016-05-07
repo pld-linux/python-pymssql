@@ -2,7 +2,7 @@ Summary:	A Python interface to MSSQL
 Summary(pl.UTF-8):	Interfejs Pythona do MSSQL
 Name:		python-pymssql
 Version:	0.8.0
-Release:	4
+Release:	5
 License:	GPL
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/pymssql/pymssql-%{version}.tar.gz
@@ -26,14 +26,13 @@ Interfejs Pythona do MSSQL.
 %setup -q -n pymssql-%{version}
 
 %build
-env CFLAGS="%{rpmcflags}" %{_bindir}/%py_build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-python -- setup.py install \
-	--root=$RPM_BUILD_ROOT \
-	--optimize=2
+%py_install
+%py_postclean
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -43,3 +42,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc PKG-INFO
 %attr(755,root,root) %{py_sitedir}/*.so
 %{py_sitedir}/*.py[co]
+%{py_sitedir}/pymssql-%{version}-py*.egg-info
